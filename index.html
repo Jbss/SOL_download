@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveOceanLife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./sunset-2582656_1920.jpg');
+            background-size:cover;
+        }
+        button {
+            margin: 20px;
+        }
+        .w-btn {
+            position: relative;
+            border:none;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius:15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+        .w-btn-outline {
+            position: relative;
+            padding: 15px 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+        .w-btn:hover {
+            letter-spacing:2px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .w-btn:active {
+            transform: scale(1.5);
+        }
+        .w-btn-outline:hover {
+            letter-spacing:2px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .w-btn-main {
+            background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+            color: white;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .w-btn-main {
+            background-size:400% 400%;
+            animation: gradient 5s ease infinite;
+        }
+        a {
+            text-decoration:none;
+            font-size:15px;
+            color:aliceblue;
+        }
+        @keyframes ring {
+            0% {
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+            100% {
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+        }
+        .w-btn-test {
+            position: relative;
+            border: none;
+            min-width: 200px;
+            min-height: 50px;
+            background: linear-gradient(
+                90deg,
+                rgba(129,230,217,1) 0%,
+                rgba(79,209,197,1) 100%
+            );
+            border-radius: 1000px;
+            color: darkslategray;
+            cursor: pointer;
+            box-shadow: 12px 12px 24px rgba(79,209,197,0.64);
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .w-btn-test:hover {
+            transform: scale(1.2);
+        }
+        .w-btn-test:hover::after {
+            content: "";
+            width: 30px;
+            height:30px;
+            border-radius:100%;
+            border: 6px solid #00ffcb;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            animation: ring 1.5s infinite;
+        }
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .h1 {
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button class="w-btn w-btn-main" type="button" onclick="location.href='https://jbss.github.io/SOL/'">
+        메인화면으로
+    </button>
+    <h1 style="font-size:300%;text-align:center;color:#000000">Ren'Py Download</h1>
+    <center>
+        <button class="w-btn w-btn-test" type="button"><a href='C:\SOL_Renpydownload\OCEANICTFESTIVAL_1_2_124-1.0-pc.zip'download>DOWNLOAD</button>
+    </center>
+    <p style="font-size:large;text-align:center;color:#000000"></p>
+</body>
+</html>
